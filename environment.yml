@@ -1,0 +1,14 @@
+name: causal_ot
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.26
+  - scipy
+  - matplotlib
+  - pip
+
+# Install exactly one CuPy build after creating the environment, matching the
+# server CUDA version, for example:
+#   pip install cupy-cuda11x==13.3.0
+#   pip install cupy-cuda12x==13.3.0

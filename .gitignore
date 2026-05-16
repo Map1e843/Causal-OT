@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+.conda/
+
+.ipynb_checkpoints/
+.pytest_cache/
+
+*.log
+*.tmp
+
+# Keep selected paper/demo PDFs in results/, but ignore large raw reruns by default.
+results/*.npz
+results/*.csv
+
