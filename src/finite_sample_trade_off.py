@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-from RiemannianBCD_gpu_fast_fixed import RiemannianBlockCoordinateDescent
+from RiemannianBCD import RiemannianBlockCoordinateDescent
 
 
 # -------------------------
