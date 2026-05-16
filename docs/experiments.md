@@ -64,20 +64,5 @@ python src/finite_sample_trade_off_gpu_fast.py \
   --out results/finite_sample_tradeoff_n2000.pdf
 ```
 
-## 3. AutoDL CUDA Notes
 
-Check GPU visibility:
-
-```bash
-nvidia-smi
-python -c "import cupy as cp; x=cp.ones((10,)); print(cp.cuda.runtime.getDeviceCount()); print((x+1).sum())"
-```
-
-If CuPy cannot find `libnvrtc`, make sure the CUDA library path matches the
-actual CUDA version installed on the machine. For CUDA 11.8:
-
-```bash
-export CUDA_HOME=/usr/local/cuda-11.8
-export LD_LIBRARY_PATH=/usr/local/cuda-11.8/targets/x86_64-linux/lib:$LD_LIBRARY_PATH
-```
 
